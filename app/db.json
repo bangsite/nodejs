@@ -1,0 +1,26 @@
+{
+  "posts": [],
+  "user": {},
+  "users": [
+    {
+      "id": 1,
+      "name": "Nga"
+    },
+    {
+      "id": 2,
+      "name": "Linh"
+    },
+    {
+      "id": 3,
+      "name": "hung"
+    },
+    {
+      "id": 4,
+      "name": "bang"
+    },
+    {
+      "id": 5,
+      "name": "Thuan"
+    }
+  ]
+}

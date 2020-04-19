@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Document2
+body
+    h1 Users
+    a(href="/users/create") New
+    form(action="/users/search/" ,method="get")
+        //- input(type="text" name="q" id="search" value=input)
+        input(type="text" name="q" id="search")
+        button search
+    ul
+        each user in users
+            li
+                span= user.name
+                span  &nbsp;
+                a(href='/users/'+ user.id) View
+                
+
+    script.
+        var searchInput = document.getElementById('search');
+        searchInput.value = sessionStorage.getItem('search');
+        searchInput.addEventListener('change', ()=>{
+            sessionStorage.setItem('search', searchInput.value);
+        });
