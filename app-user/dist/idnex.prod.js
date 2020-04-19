@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),app=express(),port=3e3;app.get("/",function(e,r){r.send("Hello Word!")}),app.listen(port,function(){console.log("Server listerning on port 3000!")});
